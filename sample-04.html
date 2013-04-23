@@ -1,0 +1,26 @@
+<html ng-app>
+<head>
+	<title></title>
+</head>
+	<body>
+		<div class="container" ng-controller="SimpleController">
+			<h3>adding a simple controller</h3>
+			<ul>
+				<li ng-repeat="customer in customers">
+					{{ customer.name}} - {{customer.city}}	
+				</li>
+			</ul>
+		</div>
+		<script src="angular.min.js"></script>
+		<script>
+			function SimpleController($scope) {
+				$scope.customers = [
+					{ name: 'Dave', city: 'Phoenix' },
+					{ name: 'Jamie', city: 'Atlanta' },
+					{ name: 'Heedy', city: 'Chandler' },
+					{ name: 'Thomas', city: 'Seattle' }
+				];
+			}
+		</script>
+	</body>
+</html>

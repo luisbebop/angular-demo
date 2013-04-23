@@ -1,0 +1,14 @@
+<html ng-app>
+<head>
+	<title></title>
+</head>
+	<body>
+		<div class="container" ng-init="names=['Dave', 'Napur', 'Heedy', 'Shiva']">
+			<h3>looping with the ng-repeat directive</h3>
+			<ul>
+				<li ng-repeat="name in names">{{ name }}</li>
+			</ul>
+		</div>
+		<script src="angular.min.js"></script>
+	</body>
+</html>
